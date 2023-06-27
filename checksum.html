@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Checksum Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div id="main-container">
+        <h1>File Checksum Calculator</h1>
+        <div id="drop-area">
+            <p>Drag and drop a file here, or click below to select a file.</p>
+            <label for="file-input" id="choose-file-button">Choose File</label>
+            <input type="file" id="file-input" />
+        </div>
+        <div id="checksum-result"></div>
+        <button id="copy-checksum-button" onclick="copyChecksum()">Copy Checksum</button>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/spark-md5/3.0.0/spark-md5.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
